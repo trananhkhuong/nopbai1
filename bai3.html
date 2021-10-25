@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button  onclick="year()">Tinh Tuổi</button>
+<script>
+    let today = new Date();
+    let date = today.getFullYear();
+    let birthDay = +prompt('Cho mình xin năm sinh bạn êiiiii : ');
+    if (birthDay > date) {
+        alert('Tuổi của bạn thật là ....:');
+    } else {
+        let result = date - birthDay;
+        alert('Bạn năm bạn :  ' + result + ' oh yeahhh');
+    }
+</script>
+</body>
+</html>

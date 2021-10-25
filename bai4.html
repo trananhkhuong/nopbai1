@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Prime(songuyento) {
+        if (songuyento < 3) {
+            return false;
+        }
+        for (let i = 3; i < songuyento; i++) {
+            if (songuyento % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    function display(num) {
+        let total = 0;
+        let count = 0;
+        for (let i = 0; count < num; i++) {
+            if (Prime(i)) {
+                count++
+                total = total + i
+            }
+        } document.write("<h2>" + "<i>" + total)
+    } display(25);
+</script>
+</body>
+</html>
